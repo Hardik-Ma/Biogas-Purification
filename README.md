@@ -16,3 +16,6 @@ Aspen Plus lacks built-in capabilities for detailed membrane cascade modeling. T
     - Pandas
     - Matplotlib
     - Jupyter Notebook
+
+2. Run simulations:
+
