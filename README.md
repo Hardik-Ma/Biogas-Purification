@@ -5,7 +5,8 @@ Python simulations for biogas purification from wheat straw waste, including a d
 Aspen Plus lacks built-in capabilities for detailed membrane cascade modeling. This repository provides a Python-based solution to generate split fractions for Aspen's SEP module.
 
 ## Repository structure
-- `src/` Python scripts for Dehydration and Membrane modules.
+- `Dehydration/` Python scripts for Dehydration module for removing the excess moisture from the biogas.
+- `Membrane_cascade/` Python scripts removal of CO2 form the biogas using membranes in series and parallel 
 - `Flowsheets/` schematic Representation of the membrane cascade.
 - `Data/` Input and the Output data for the dehydration column and the membrane cascade.
 
