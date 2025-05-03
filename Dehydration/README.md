@@ -68,3 +68,13 @@ To adapt to other systems:
 k_i = {'NewComponent': ...}  # Adsorption affinity
 coefficients = {'NewComponent': {...}}  # Virial coefficients
 ```
+
+## Note
+- **Current Scope:**<br>
+This model calculates the **equilibrium adsorbent requirement** (`adsorbed_amounts`) but does not simulate dynamic column behavior (e.g., breakthrough curves, transient adsorption fronts).
+- **Future Work:**<br>
+Planned extensions include:
+    - Dynamic breakthrough time prediction
+    - Axial dispersion effects
+    - Multi-column cycling simulations
+    
