@@ -2,6 +2,17 @@
 
 Python implementation of an adsorption-based dehydration column for biogas purification, simulating water content removal using silica gel.
 
+## Installation
+
+### Prerequisites
+- Python 3.x
+
+### Dependencies
+- Python 3.x
+- Required libraries:
+  - NumPy
+  - SciPy
+
 ## Key Features
 - Calculates component adsorption (H₂O, CO₂) using **Virial isotherm model**
 - Handles real-gas behaviour through **temperature-dependent coefficients**
@@ -43,3 +54,17 @@ Outlet Composition (kmol/hr):
 2. **Ideal gas mixture** for partial pressure calculations
 3. **Negligable mass transfer resistance** (instant equilibrium)
 4. **No competative adsorption** (components treated independeltly)
+
+## Modify parameters:
+```python
+# In dehydration_model.py
+feed_composition = {'CO2': ..., 'H2O': ...}  # To change the composition of the feed stream to the Dehydration column
+temperature_C = ...  # Change operating temperature
+```
+## Customization
+To adapt to other systems:
+1. Add new components
+```python
+k_i = {'NewComponent': ...}  # Adsorption affinity
+coefficients = {'NewComponent': {...}}  # Virial coefficients
+```
