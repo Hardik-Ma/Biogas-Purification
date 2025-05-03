@@ -20,3 +20,6 @@ Aspen Plus lacks built-in capabilities for detailed membrane cascade modeling. T
 
 2. Run simulations:
 
+python Dehydration/Dehydration_Biogas.py    # Dehydration column simulation
+
+
