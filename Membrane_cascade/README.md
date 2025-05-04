@@ -41,6 +41,20 @@ membrane_model.py
 └── Main Execution          # Runs single-module simulation + plots
 ```
 
+## Installation
+
+### Prerequisites
+- Python 3.x
+
+### Dependencies
+- Python 3.x
+- Required libraries:
+  - NumPy
+  - SciPy
+  - matplotlib
+  - CoolProp
+
+
 ## Assumptions
 1. **Isothermal operation** (T=50°C constant)
 2. **Negligible retentate pressure drop** (Ideal hollow fiber)
