@@ -30,3 +30,19 @@ DOI: 10.1021/acs.energyfuels.7b00120
 1. **MEMB-1**: Concentrates CH₄ in retentate (PBG-01), sends permeate to MEMB-2  
 2. **MEMB-2**: Recovers residual CH₄ (PBG-04) from MEMB-1 permeate  
 3. **MEMB-PUR**: Further purifies CH₄ (mixed PBG-01+PBG-04), vents CO₂ (WBG-02)  
+
+## Code Structure
+```python
+membrane_model.py
+├── Constants               # Permeability (Barrer), feed conditions
+├── interpolate_permeability()  # For T-dependent properties (future use)
+├── simulate_membrane_module_partial_pressure_debug()  # Core solver
+├── Membrane_Unit_Specifications # Inputs for membrane unit
+└── Main Execution          # Runs single-module simulation + plots
+```
+
+## Assumptions
+1. **Isothermal operation** (T=50°C constant)
+2. **Negligible retentate pressure drop** (Ideal hollow fiber)
+3. **No cross-flow mixing** (plug flow assumed)
+4. **Constant permeability**
